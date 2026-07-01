@@ -30,6 +30,12 @@ src/       算法实现
 tests/     简单测试
 ```
 
+## 学习过程记录
+
+- [学习日志](LEARNING_LOG.md)
+- [错题与复盘记录](REVIEW_NOTES.md)
+- [练习题型索引](PRACTICE_INDEX.md)
+
 ## 运行测试
 
 ```bash
