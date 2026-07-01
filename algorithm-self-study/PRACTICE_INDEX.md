@@ -100,6 +100,20 @@
 - `max_profit`
 - `length_of_lis`
 
+## 贪心
+
+典型题型：
+
+- 区间调度。
+- 跳跃游戏。
+- 多次买卖股票。
+
+当前实现：
+
+- `max_non_overlapping_intervals`
+- `can_jump`
+- `max_profit_many_transactions`
+
 ## 树与图
 
 典型题型：

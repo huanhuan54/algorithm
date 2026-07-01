@@ -22,6 +22,7 @@
 9. [树的遍历：递归和层序两种视角](articles/09_tree_traversal.md)
 10. [图搜索：BFS 与 DFS](articles/10_graph_search.md)
 11. [二分答案：在答案范围里查找](articles/11_binary_answer.md)
+12. [贪心算法：每一步做局部最优选择](articles/12_greedy.md)
 
 ## 代码结构
 
