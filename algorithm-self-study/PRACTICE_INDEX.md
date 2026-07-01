@@ -16,6 +16,8 @@
 - `lower_bound`
 - `upper_bound`
 - `search_insert_position`
+- `ship_within_days`
+- `min_eating_speed`
 
 ## 数组与双指针
 

@@ -2,6 +2,7 @@ import unittest
 
 from src.arrays import max_sum_subarray, two_sum_sorted
 from src.backtracking import permutations, subsets
+from src.binary_answer import can_ship_with_capacity, min_eating_speed, ship_within_days
 from src.dynamic_programming import climb_stairs, length_of_lis, max_profit
 from src.graph import bfs_order, dfs_order, shortest_path_length
 from src.hash_table import first_unique_char, two_sum
@@ -22,6 +23,13 @@ class AlgorithmTests(unittest.TestCase):
         self.assertEqual(lower_bound(repeated, 2), 1)
         self.assertEqual(upper_bound(repeated, 2), 4)
         self.assertEqual(search_insert_position([1, 3, 5, 6], 2), 1)
+
+    def test_binary_answer(self):
+        weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.assertTrue(can_ship_with_capacity(weights, 5, 15))
+        self.assertFalse(can_ship_with_capacity(weights, 5, 14))
+        self.assertEqual(ship_within_days(weights, 5), 15)
+        self.assertEqual(min_eating_speed([3, 6, 7, 11], 8), 4)
 
     def test_arrays(self):
         self.assertEqual(two_sum_sorted([1, 2, 4, 6, 10], 8), [1, 3])

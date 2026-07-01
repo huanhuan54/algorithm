@@ -7,7 +7,7 @@
 - 掌握常见数据结构的使用场景和复杂度特征。
 - 能够把题目转化为可实现的算法步骤。
 - 通过代码和测试验证算法正确性。
-- 形成持续复盘的学习记录，便于后续补充 commit 记录和更多专题。
+- 形成持续复盘的学习记录，便于后续补充更多专题和练习。
 
 ## 文章目录
 
@@ -21,6 +21,7 @@
 8. [排序基础：从简单排序到归并排序](articles/08_sorting_basics.md)
 9. [树的遍历：递归和层序两种视角](articles/09_tree_traversal.md)
 10. [图搜索：BFS 与 DFS](articles/10_graph_search.md)
+11. [二分答案：在答案范围里查找](articles/11_binary_answer.md)
 
 ## 代码结构
 
@@ -35,7 +36,8 @@ tests/     简单测试
 - [学习日志](LEARNING_LOG.md)
 - [错题与复盘记录](REVIEW_NOTES.md)
 - [练习题型索引](PRACTICE_INDEX.md)
-- [实质提交记录说明](COMMIT_SUMMARY.md)
+- [学习提交记录](COMMIT_SUMMARY.md)
+- [后续学习路线](STUDY_ROADMAP.md)
 
 ## 运行测试
 
@@ -46,5 +48,5 @@ python -m unittest discover -s tests
 ## 后续计划
 
 - 增加排序、二分查找、图论、并查集、最短路等专题。
-- 将每次学习补充为独立 commit，形成持续学习轨迹。
+- 将每次学习补充为清晰的阶段记录，形成持续学习轨迹。
 - 为每个专题补充更多边界用例和错题复盘。
