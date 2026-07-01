@@ -18,6 +18,7 @@
 5. [递归、搜索与回溯](articles/05_recursion_backtracking.md)
 6. [动态规划入门：状态、转移与边界](articles/06_dynamic_programming.md)
 7. [前缀和：把区间求和变成一次查询](articles/07_prefix_sum.md)
+8. [排序基础：从简单排序到归并排序](articles/08_sorting_basics.md)
 
 ## 代码结构
 
