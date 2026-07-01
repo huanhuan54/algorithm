@@ -35,6 +35,7 @@ tests/     简单测试
 - [学习日志](LEARNING_LOG.md)
 - [错题与复盘记录](REVIEW_NOTES.md)
 - [练习题型索引](PRACTICE_INDEX.md)
+- [实质提交记录说明](COMMIT_SUMMARY.md)
 
 ## 运行测试
 

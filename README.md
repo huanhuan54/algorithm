@@ -20,6 +20,10 @@
 
 [algorithm-self-study/REVIEW_NOTES.md](algorithm-self-study/REVIEW_NOTES.md)
 
+提交记录说明：
+
+[algorithm-self-study/COMMIT_SUMMARY.md](algorithm-self-study/COMMIT_SUMMARY.md)
+
 ## 技术文章
 
 - 算法学习路线与复杂度分析
