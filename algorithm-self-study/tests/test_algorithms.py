@@ -3,6 +3,7 @@ import unittest
 from src.arrays import max_sum_subarray, two_sum_sorted
 from src.backtracking import permutations, subsets
 from src.dynamic_programming import climb_stairs, length_of_lis, max_profit
+from src.graph import bfs_order, dfs_order, shortest_path_length
 from src.hash_table import first_unique_char, two_sum
 from src.prefix_sum import build_prefix_sum, range_sum, subarray_sum_count
 from src.search import binary_search, linear_search, lower_bound, search_insert_position, upper_bound
@@ -69,6 +70,20 @@ class AlgorithmTests(unittest.TestCase):
         self.assertEqual(inorder(root), [4, 2, 5, 1, 3])
         self.assertEqual(postorder(root), [4, 5, 2, 3, 1])
         self.assertEqual(level_order(root), [[1], [2, 3], [4, 5]])
+
+    def test_graph_search(self):
+        graph = {
+            "A": ["B", "C"],
+            "B": ["D"],
+            "C": ["D", "E"],
+            "D": ["F"],
+            "E": ["F"],
+            "F": [],
+        }
+        self.assertEqual(dfs_order(graph, "A"), ["A", "B", "D", "F", "C", "E"])
+        self.assertEqual(bfs_order(graph, "A"), ["A", "B", "C", "D", "E", "F"])
+        self.assertEqual(shortest_path_length(graph, "A", "F"), 3)
+        self.assertEqual(shortest_path_length(graph, "E", "A"), -1)
 
 
 if __name__ == "__main__":

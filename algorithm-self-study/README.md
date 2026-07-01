@@ -20,6 +20,7 @@
 7. [前缀和：把区间求和变成一次查询](articles/07_prefix_sum.md)
 8. [排序基础：从简单排序到归并排序](articles/08_sorting_basics.md)
 9. [树的遍历：递归和层序两种视角](articles/09_tree_traversal.md)
+10. [图搜索：BFS 与 DFS](articles/10_graph_search.md)
 
 ## 代码结构
 
