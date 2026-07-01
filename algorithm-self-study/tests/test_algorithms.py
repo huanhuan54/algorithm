@@ -5,7 +5,7 @@ from src.backtracking import permutations, subsets
 from src.dynamic_programming import climb_stairs, length_of_lis, max_profit
 from src.hash_table import first_unique_char, two_sum
 from src.prefix_sum import build_prefix_sum, range_sum, subarray_sum_count
-from src.search import binary_search, linear_search
+from src.search import binary_search, linear_search, lower_bound, search_insert_position, upper_bound
 from src.stack_queue import is_valid_parentheses, next_greater_elements
 
 
@@ -15,6 +15,10 @@ class AlgorithmTests(unittest.TestCase):
         self.assertEqual(linear_search(nums, 7), 3)
         self.assertEqual(binary_search(nums, 7), 3)
         self.assertEqual(binary_search(nums, 2), -1)
+        repeated = [1, 2, 2, 2, 5]
+        self.assertEqual(lower_bound(repeated, 2), 1)
+        self.assertEqual(upper_bound(repeated, 2), 4)
+        self.assertEqual(search_insert_position([1, 3, 5, 6], 2), 1)
 
     def test_arrays(self):
         self.assertEqual(two_sum_sorted([1, 2, 4, 6, 10], 8), [1, 3])
