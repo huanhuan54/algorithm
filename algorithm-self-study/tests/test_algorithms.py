@@ -8,6 +8,7 @@ from src.prefix_sum import build_prefix_sum, range_sum, subarray_sum_count
 from src.search import binary_search, linear_search, lower_bound, search_insert_position, upper_bound
 from src.sorting import insertion_sort, merge_sort, selection_sort
 from src.stack_queue import is_valid_parentheses, next_greater_elements
+from src.tree import TreeNode, inorder, level_order, postorder, preorder
 
 
 class AlgorithmTests(unittest.TestCase):
@@ -57,6 +58,17 @@ class AlgorithmTests(unittest.TestCase):
         self.assertEqual(insertion_sort(nums), expected)
         self.assertEqual(merge_sort(nums), expected)
         self.assertEqual(nums, [5, 2, 4, 6, 1, 3])
+
+    def test_tree_traversal(self):
+        root = TreeNode(
+            1,
+            left=TreeNode(2, TreeNode(4), TreeNode(5)),
+            right=TreeNode(3),
+        )
+        self.assertEqual(preorder(root), [1, 2, 4, 5, 3])
+        self.assertEqual(inorder(root), [4, 2, 5, 1, 3])
+        self.assertEqual(postorder(root), [4, 5, 2, 3, 1])
+        self.assertEqual(level_order(root), [[1], [2, 3], [4, 5]])
 
 
 if __name__ == "__main__":
