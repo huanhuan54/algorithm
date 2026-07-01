@@ -17,6 +17,7 @@
 4. [哈希表：用空间换时间](articles/04_hash_table.md)
 5. [递归、搜索与回溯](articles/05_recursion_backtracking.md)
 6. [动态规划入门：状态、转移与边界](articles/06_dynamic_programming.md)
+7. [前缀和：把区间求和变成一次查询](articles/07_prefix_sum.md)
 
 ## 代码结构
 

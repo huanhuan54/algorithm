@@ -4,6 +4,7 @@ from src.arrays import max_sum_subarray, two_sum_sorted
 from src.backtracking import permutations, subsets
 from src.dynamic_programming import climb_stairs, length_of_lis, max_profit
 from src.hash_table import first_unique_char, two_sum
+from src.prefix_sum import build_prefix_sum, range_sum, subarray_sum_count
 from src.search import binary_search, linear_search
 from src.stack_queue import is_valid_parentheses, next_greater_elements
 
@@ -37,6 +38,12 @@ class AlgorithmTests(unittest.TestCase):
         self.assertEqual(climb_stairs(5), 8)
         self.assertEqual(max_profit([7, 1, 5, 3, 6, 4]), 5)
         self.assertEqual(length_of_lis([10, 9, 2, 5, 3, 7, 101, 18]), 4)
+
+    def test_prefix_sum(self):
+        self.assertEqual(build_prefix_sum([2, -1, 3]), [0, 2, 1, 4])
+        self.assertEqual(range_sum([2, -1, 3, 4], 1, 3), 6)
+        self.assertEqual(subarray_sum_count([1, 1, 1], 2), 2)
+        self.assertEqual(subarray_sum_count([1, -1, 0], 0), 3)
 
 
 if __name__ == "__main__":
