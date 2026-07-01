@@ -23,6 +23,7 @@
 10. [图搜索：BFS 与 DFS](articles/10_graph_search.md)
 11. [二分答案：在答案范围里查找](articles/11_binary_answer.md)
 12. [贪心算法：每一步做局部最优选择](articles/12_greedy.md)
+13. [并查集：维护动态连通关系](articles/13_union_find.md)
 
 ## 代码结构
 

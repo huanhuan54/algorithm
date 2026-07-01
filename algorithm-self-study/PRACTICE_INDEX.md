@@ -132,3 +132,19 @@
 - `dfs_order`
 - `bfs_order`
 - `shortest_path_length`
+
+## 并查集
+
+典型题型：
+
+- 动态连通性。
+- 连通块数量。
+- 冗余连接。
+
+当前实现：
+
+- `UnionFind`
+- `find`
+- `union`
+- `connected`
+- `count_components`

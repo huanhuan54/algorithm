@@ -12,6 +12,7 @@ from src.search import binary_search, linear_search, lower_bound, search_insert_
 from src.sorting import insertion_sort, merge_sort, selection_sort
 from src.stack_queue import is_valid_parentheses, next_greater_elements
 from src.tree import TreeNode, inorder, level_order, postorder, preorder
+from src.union_find import UnionFind
 
 
 class AlgorithmTests(unittest.TestCase):
@@ -100,6 +101,16 @@ class AlgorithmTests(unittest.TestCase):
         self.assertTrue(can_jump([2, 3, 1, 1, 4]))
         self.assertFalse(can_jump([3, 2, 1, 0, 4]))
         self.assertEqual(max_profit_many_transactions([7, 1, 5, 3, 6, 4]), 7)
+
+    def test_union_find(self):
+        union_find = UnionFind(5)
+        self.assertEqual(union_find.count_components(), 5)
+        self.assertTrue(union_find.union(0, 1))
+        self.assertTrue(union_find.union(1, 2))
+        self.assertTrue(union_find.connected(0, 2))
+        self.assertFalse(union_find.connected(0, 3))
+        self.assertEqual(union_find.count_components(), 3)
+        self.assertFalse(union_find.union(0, 2))
 
 
 if __name__ == "__main__":
